@@ -8,3 +8,4 @@ router.post('/api/user/', userController.create)
 router.get('/api/user/:userId', userController.show)
 router.patch('/api/user/:userId', userController.update)
 router.delete('/api/user/:userId', userController.delete)
+
