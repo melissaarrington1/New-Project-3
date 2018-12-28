@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+const Title = styled.div`
+height: 100%vh;
+font-size: 1.5em;
+text-align: center;
+color: white
+`
+
 class HomePage extends Component {
     render() {
         return(
@@ -12,3 +19,5 @@ class HomePage extends Component {
         )
     }
 }
+
+export default HomePage
