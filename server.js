@@ -5,6 +5,9 @@ const mongoose = require('mongoose');
 const app = express();
 mongoose.connect('process.env.MONGODB_URI'); //mongodb://localhost/idea-board
 
+app.use(express.static(__dirname + '/client/build/'))
+
+
 const connection = mongoose.connection;
 connection.on('connected', () => {
   console.log('Mongoose Connected Successfully')
@@ -16,8 +19,9 @@ connection.on('error', (err) => {
 }) 
 
 app.use(bodyParser.json());
+
 app.get('/', (req,res) => {
-  res.send('Hello world!')
+  res.sendFile(__dirname + '/client/build/index.html')
 })
 
 const PORT = process.env.PORT || 3001;
