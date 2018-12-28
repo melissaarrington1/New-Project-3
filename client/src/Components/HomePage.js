@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
+
 
 const Title = styled.div`
-height: 100%vh;
+height: 100vh;
 font-size: 1.5em;
 text-align: center;
 color: white
