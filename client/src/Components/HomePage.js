@@ -16,7 +16,7 @@ class HomePage extends Component {
         return(
             <Title>
                 <h1>Welcome To Your Weather App</h1>
-                <Button variant='contained' color='primary'><Link to='/users'>Click Here to Enter</Link></Button>
+                <Button variant='contained' color='primary'><Link to='/user'>Click Here to Enter</Link></Button>
             </Title>
         )
     }
